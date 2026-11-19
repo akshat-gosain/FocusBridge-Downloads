@@ -1,0 +1,12 @@
+ActivityWatch v0.14.1
+Copyright ActivityWatch contributors. Distributed under the Mozilla Public License 2.0.
+Original upstream source and corresponding release:
+https://github.com/ActivityWatch/activitywatch/tree/v0.14.1
+https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.1
+License text: https://www.mozilla.org/en-US/MPL/2.0/
+
+FocusBridge redistributes the official, pinned ActivityWatch application unmodified,
+preserving its upstream code signature and its included component license notices.
+ActivityWatch includes third-party components; their license texts remain in its bundle.
+The applicable ActivityWatch source remains available at the upstream links above.
+This does not publish or license FocusBridge's proprietary application source.
