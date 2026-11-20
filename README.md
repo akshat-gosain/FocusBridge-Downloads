@@ -6,6 +6,13 @@ pairing links, device logs and developer archives do not belong in this reposito
 **Release preparation is in progress. No public installer or TestFlight invitation is available yet.**
 Do not use historical development-signed disk images as a public release.
 
+The App Store listing is **FocusBridge: Earn Your Time**. The planned free beta
+ends March 1, 2027 and requires no purchase/subscription. Each TestFlight build also
+has Apple's build expiry. No invitation link will be posted before it exists.
+
+See the [setup/support guide](SUPPORT.md) and [privacy notice](PRIVACY.md).
+Support/privacy contact: [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@gmail.com).
+
 ## Mac Installation
 
 The release will provide one signed, Apple-notarized package per Mac architecture:
