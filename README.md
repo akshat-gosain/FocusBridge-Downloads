@@ -3,7 +3,8 @@
 Public installers and release notes only. FocusBridge application source, server credentials,
 pairing links, device logs and developer archives do not belong in this repository.
 
-**Mac companion beta installers are available. The iPhone TestFlight invitation is not available yet.**
+**Signed Mac installers are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
+Apple's external review is pending, so this public link cannot accept installs yet.
 Do not use historical development-signed disk images as a public release.
 
 The App Store listing is **FocusBridge: Earn Your Time**. The first release is free,
@@ -15,13 +16,15 @@ Support/privacy contact: [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@
 
 ## Mac Installation
 
-Download the signed, Apple-notarized package from the [Mac beta release](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/v0.3.0-beta):
+Download the signed, Apple-notarized package from the [Mac companion release](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/v0.3.0-beta):
 
 - `macOS-arm64.pkg`: Apple silicon (M-series Macs).
 - `macOS-x86_64.pkg`: Intel Macs.
 
-These are companion installers for invited iPhone users. Installation alone does not
-create an account; fresh-user iPhone acceptance and external Beta App Review are still in progress.
+Install the iPhone app from TestFlight once Apple approves the build, then choose
+**Continue with Apple**. Follow **Connect your Mac** in the iPhone setup to install
+the companion and connect both devices to that account. Mac installation alone
+does not create an account. App Store review and release are separate.
 
 Open the package and complete the standard macOS installer. It installs FocusBridge and the
 official ActivityWatch collector into Applications. No Terminal commands or Xcode are needed.

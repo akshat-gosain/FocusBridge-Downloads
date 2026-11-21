@@ -8,14 +8,16 @@ Health records. Redact private details from screenshots.
 
 ## Release Status
 
-The customer release is still in preparation. There is no verified public Mac
-installer or external TestFlight invitation yet. Only release assets posted in
-this repository's Releases are intended as public Mac downloads. Do not bypass
-Gatekeeper or install an old development-signed package as the public release.
+The signed, Apple-notarized [Mac installers](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/v0.3.0-beta)
+are available for Apple silicon and Intel. The public [TestFlight link](https://testflight.apple.com/join/JNZdkMqz)
+has been created and its build submitted for external review. Apple must approve
+the build before people can install through that link. App Store availability
+will follow its separate review and release process.
 
-## Intended Setup
+## Setup
 
-1. Install the iPhone app from the eventual verified TestFlight/App Store link.
+1. Install the iPhone app from the TestFlight link above once Apple approves it,
+   or from its App Store listing when released.
 2. Sign up using Apple's native sign-in. Account access is free and requires no purchase.
 3. Open the Mac installer link from the app on your own compatible Mac. Choose
    the package for Apple Silicon or Intel. Windows is not supported.
