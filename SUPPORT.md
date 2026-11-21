@@ -16,7 +16,7 @@ Gatekeeper or install an old development-signed package as the public release.
 ## Intended Setup
 
 1. Install the iPhone app from the eventual verified TestFlight/App Store link.
-2. Sign up using Apple's native sign-in. The free beta requires no purchase.
+2. Sign up using Apple's native sign-in. Account access is free and requires no purchase.
 3. Open the Mac installer link from the app on your own compatible Mac. Choose
    the package for Apple Silicon or Intel. Windows is not supported.
 4. Install the signed/notarized package containing FocusBridge and the official

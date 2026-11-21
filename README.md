@@ -6,9 +6,9 @@ pairing links, device logs and developer archives do not belong in this reposito
 **Mac companion beta installers are available. The iPhone TestFlight invitation is not available yet.**
 Do not use historical development-signed disk images as a public release.
 
-The App Store listing is **FocusBridge: Earn Your Time**. The planned free beta
-ends March 1, 2027 and requires no purchase/subscription. Each TestFlight build also
-has Apple's build expiry. No invitation link will be posted before it exists.
+The App Store listing is **FocusBridge: Earn Your Time**. The first release is free,
+with no purchase, subscription or account-access beta cutoff. Each TestFlight build
+still has Apple's build expiry. No invitation link will be posted before it exists.
 
 See the [setup/support guide](SUPPORT.md) and [privacy notice](PRIVACY.md).
 Support/privacy contact: [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@gmail.com).

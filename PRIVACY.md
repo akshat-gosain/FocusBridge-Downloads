@@ -1,6 +1,6 @@
 # FocusBridge Privacy Notice
 
-Updated November 20, 2026. Applies to the FocusBridge iPhone app, Mac companion,
+Updated November 21, 2026. Applies to the FocusBridge iPhone app, Mac companion,
 Safari extensions and associated FocusBridge account service.
 
 FocusBridge is operated by Akshat Gosain. For privacy requests or support, contact
@@ -79,9 +79,9 @@ state are processed by FocusBridge and Apple's push-notification infrastructure
 to update your activity. Your displayed balance can be visible on the Lock Screen
 or Dynamic Island. iOS controls permission and background delivery.
 
-Apple also processes TestFlight distribution, native sign-in and any StoreKit
-transaction you initiate. The current free beta has no configured paid product
-and requires no purchase or subscription. Apple has its own privacy policies.
+Apple also processes TestFlight distribution and native sign-in. The first release
+has no configured paid product, does not send purchase history, and requires no
+purchase or subscription. Apple has its own privacy policies.
 
 ## Optional Diagnostics
 
