@@ -5,10 +5,11 @@ pairing links, device logs and developer archives do not belong in this reposito
 
 **Signed Mac installers are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
 Apple's external review is pending, so this public link cannot accept installs yet.
+Version 0.3.0 (29) is submitted for both external TestFlight and App Store review.
 Do not use historical development-signed disk images as a public release.
 
 The App Store listing is **FocusBridge: Earn Your Time**. The first release is free,
-with no purchase, subscription or account-access beta cutoff. Each TestFlight build
+with no purchase, subscription or account-access expiry. Each TestFlight build
 still has Apple's build expiry. No invitation link will be posted before it exists.
 
 See the [setup/support guide](SUPPORT.md) and [privacy notice](PRIVACY.md).

@@ -12,7 +12,9 @@ The signed, Apple-notarized [Mac installers](https://github.com/akshat-gosain/Fo
 are available for Apple silicon and Intel. The public [TestFlight link](https://testflight.apple.com/join/JNZdkMqz)
 has been created and its build submitted for external review. Apple must approve
 the build before people can install through that link. App Store availability
-will follow its separate review and release process.
+will follow its separate review and release process. Version 0.3.0 (29) has been
+submitted for both reviews. Mainland China is excluded from App Store availability
+until its required local filings are available.
 
 ## Setup
 
