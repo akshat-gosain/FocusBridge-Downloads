@@ -17,6 +17,11 @@ until its required local filings are available.
 
 ## Setup
 
+If an older build rejects a nonempty selection during initial setup, update through
+TestFlight to **0.3.0 (30)**. This fixes a status refresh overwriting the picker draft.
+Choose your apps/categories/websites and tap **Done**. Existing accounts and balances
+are preserved by the update; uninstalling is not required.
+
 1. Install the iPhone app from the TestFlight link above,
    or from its App Store listing when released.
 2. Sign up using Apple's native sign-in. Account access is free and requires no purchase.
