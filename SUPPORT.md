@@ -2,7 +2,8 @@
 
 Contact [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@gmail.com).
 Include your app version, iOS/macOS version, approximate time/timezone and a short
-description. Optional diagnostics can be enabled in the app's Settings when needed.
+description. Limited operational reports start after the in-app privacy notice;
+optional detailed support logs can also be enabled in Settings when needed.
 Do not send passwords, pairing links/codes, Apple credentials, push tokens or raw
 Health records. Redact private details from screenshots.
 
@@ -10,15 +11,13 @@ Health records. Redact private details from screenshots.
 
 The signed, Apple-notarized [Mac installers](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/v0.3.0-beta)
 are available for Apple silicon and Intel. The public [TestFlight link](https://testflight.apple.com/join/JNZdkMqz)
-has been created and its build submitted for external review. Apple must approve
-the build before people can install through that link. App Store availability
-will follow its separate review and release process. Version 0.3.0 (29) has been
-submitted for both reviews. Mainland China is excluded from App Store availability
+is open to testers. App Store availability will follow its separate review and
+release process. Mainland China is excluded from App Store availability
 until its required local filings are available.
 
 ## Setup
 
-1. Install the iPhone app from the TestFlight link above once Apple approves it,
+1. Install the iPhone app from the TestFlight link above,
    or from its App Store listing when released.
 2. Sign up using Apple's native sign-in. Account access is free and requires no purchase.
 3. Open the Mac installer link from the app on your own compatible Mac. Choose

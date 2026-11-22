@@ -1,6 +1,6 @@
 # FocusBridge Privacy Notice
 
-Updated November 21, 2026. Applies to the FocusBridge iPhone app, Mac companion,
+Updated November 22, 2026. Applies to the FocusBridge iPhone app, Mac companion,
 Safari extensions and associated FocusBridge account service.
 
 FocusBridge is operated by Akshat Gosain. For privacy requests or support, contact
@@ -83,9 +83,25 @@ Apple also processes TestFlight distribution and native sign-in. The first relea
 has no configured paid product, does not send purchase history, and requires no
 purchase or subscription. Apple has its own privacy policies.
 
-## Optional Diagnostics
+## Limited Technical Reports
 
-New installations default optional diagnostics off. You can change this in Settings.
+Starting with iPhone build 30, a one-time privacy notice explains limited operational
+reports before collection begins. Tapping Agree and continue gives consent to this
+reporting. Reports are then sent automatically to identify setup and protection
+failures; there is no separate operational-report toggle. They include app/build and OS versions,
+process component and random session/event identifiers, error codes/domains,
+Screen Time authorization results, and selection counts and setup save outcomes.
+They are linked to your account and device, not anonymous. They exclude selected
+app names, selection tokens, free-text error messages, usage/balance values, access
+window identifiers and raw Health data. Identical reports are limited to once per
+minute per process, with a bounded local queue; offline reports are retried after
+device enrollment and connectivity resume. Delivery is not guaranteed if the app
+cannot run or the device has not enrolled. Detailed support traces remain separately
+optional; their existing opt-out is not changed by the operational-report channel.
+
+## Optional Detailed Diagnostics
+
+New installations default detailed support logs off. You can change this in Settings.
 The owner's earlier private test installations may retain their existing choice.
 
 When enabled, diagnostics can include app/OS version, process and session identifiers,
@@ -96,9 +112,9 @@ recognized credentials and URLs. The release candidate excludes raw system boot
 uptime and website hostnames from diagnostic uploads; it does not upload raw Health
 activity or goal values in diagnostics.
 
-Turning diagnostics off clears the queued local diagnostic events and stops later
-batches. It cannot recall an in-flight request or immediately erase events already
-received by the service. Required account, reward and balance traffic continues.
+Turning detailed logs off clears that local queue and stops later detailed batches.
+It cannot recall an in-flight request or immediately erase received events.
+Limited operational reports and required account, reward and balance traffic continue.
 
 ## Retention And Account Deletion
 

@@ -4,13 +4,13 @@ Public installers and release notes only. FocusBridge application source, server
 pairing links, device logs and developer archives do not belong in this repository.
 
 **Signed Mac installers are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
-Apple's external review is pending, so this public link cannot accept installs yet.
-Version 0.3.0 (29) is submitted for both external TestFlight and App Store review.
+The public TestFlight link is open. App Store review and public App Store release
+are separate; a TestFlight invitation is not an App Store listing.
 Do not use historical development-signed disk images as a public release.
 
 The App Store listing is **FocusBridge: Earn Your Time**. The first release is free,
 with no purchase, subscription or account-access expiry. Each TestFlight build
-still has Apple's build expiry. No invitation link will be posted before it exists.
+still has Apple's build expiry.
 
 See the [setup/support guide](SUPPORT.md) and [privacy notice](PRIVACY.md).
 Support/privacy contact: [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@gmail.com).
@@ -22,7 +22,7 @@ Download the signed, Apple-notarized package from the [Mac companion release](ht
 - `macOS-arm64.pkg`: Apple silicon (M-series Macs).
 - `macOS-x86_64.pkg`: Intel Macs.
 
-Install the iPhone app from TestFlight once Apple approves the build, then choose
+Install the iPhone app from TestFlight, then choose
 **Continue with Apple**. Follow **Connect your Mac** in the iPhone setup to install
 the companion and connect both devices to that account. Mac installation alone
 does not create an account. App Store review and release are separate.
