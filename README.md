@@ -63,7 +63,7 @@ not disconnect a Mac or reset the phone balance. See [Windows setup](WINDOWS_SET
 
 ## Android Installation
 
-[Download FocusBridge for Android](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/android-v0.3.0)
+[Download FocusBridge for Android](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/android-v0.3.1)
 and follow the [Android setup guide](ANDROID_SETUP.md). The release-signed APK
 requires Android 10 or later and includes guided account creation, permissions,
 app selection and Mac/Windows pairing. One Android or iPhone spends an account's

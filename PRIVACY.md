@@ -125,9 +125,37 @@ the local retry queue is bounded to 100 events. A separate bounded local log rec
 operation names and error types/codes. The ActivityWatch database is independent
 of these reports and remains local.
 
+## Android Operational Reports And Optional Feature Feedback
+
+On Android 0.3.1 and later, required limited operational reports additionally
+include a random installation/support reference; setup/permission states and
+counts; request identifiers, timing, route templates and fixed error codes;
+window timing and usage/balance totals; own-code crash method/line frames and a
+fingerprint; and available OS-reported process-exit/ANR reason codes. A suspected
+foreground UI stall can also be reported. Exception messages, raw stack/ANR dumps,
+request bodies, passwords and selected app names are excluded. Limited setup
+reports can arrive before an account is created or a device is enrolled, subject
+to strict field, size and admission limits. The reference can correlate those
+technical reports with later account-linked reports. It is not a login secret.
+
+The Android local technical journal is separate from protection/accounting data,
+capped at 128 events/192 KiB and seven days, with daily category quotas and
+duplicate suppression. A fatal Java error leaves a small private technical marker
+for the next launch. Android 11+ may supply prior own-process exit reasons; raw
+native crash/ANR trace streams are not read/uploaded. Reports may require reopening
+and connectivity to upload and are not a continuous screen or activity recording.
+
+Android's optional feature feedback contains a feature category, rating and a
+predefined issue category, linked to the account/device when sent. There is no
+free-text feedback capture. Automatic prompts can be skipped or stopped; the
+feature can be disabled independently of operational reports and protection.
+Unsent local reports/support reference are cleared/rotated on account deletion;
+unlinked pre-login reports expire under the seven-day service policy.
+
 ## Optional Detailed Diagnostics
 
-New installations default detailed support logs off. You can change this in Settings.
+The separate iPhone detailed-support option defaults off for new installations.
+You can change it in Settings; Android's operational reports above do not use this toggle.
 The owner's earlier private test installations may retain their existing choice.
 
 When enabled, diagnostics can include app/OS version, process and session identifiers,
@@ -146,14 +174,19 @@ Limited operational reports and required account, reward and balance traffic con
 
 Account, device, policy, accounting and reward records are retained to operate your
 active account; they do not currently have a general short age-based expiry.
-Ordinary stored diagnostic traces/samples are retained for up to 48 hours; errors
-and selected lifecycle events for up to 14 days, with bounded periodic cleanup.
+Android operational, pre-login and feedback reports use a rolling seven-day
+retention policy with bounded indexed cleanup. Other platforms retain ordinary
+diagnostic traces/samples for up to 48 hours and errors/selected lifecycle events
+for up to 14 days. These cleanup policies do not erase account balances or rewards.
 
 Separate operational server logs are limited by size-based rotation. They can include
 request/device identifiers, route, error/status and timing information. They are not
 used for advertising. Encrypted routine database backups rotate after 14 days;
 deleted data can remain in those backups until expiry. Service signing/encryption
 keys and operational source/configuration recovery archives are stored separately.
+New routine business backups omit transient diagnostic-table data while retaining
+their schemas; earlier backups containing diagnostics expire under the existing
+fourteen-day policy.
 
 Use Settings > Delete account in the iPhone app, with fresh Apple authentication
 when required. The service revokes Apple authorization before removing account-scoped

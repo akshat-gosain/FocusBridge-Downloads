@@ -1,6 +1,6 @@
 # FocusBridge for Android
 
-Download the signed [Android APK](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/download/android-v0.3.0/FocusBridge-Android-0.3.0.apk).
+Download the signed [Android APK](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/download/android-v0.3.1/FocusBridge-Android-0.3.1.apk).
 Android 10 or later is required. This is a direct APK download, not a Google Play listing.
 
 1. Open the APK on your Android phone. Allow that browser/file manager to install
@@ -65,9 +65,29 @@ This Android release protects **native apps**. Website-path/YouTube Shorts
 filtering and Health Connect rewards are not implemented in this APK. Apple
 Health remains an iPhone connector, not an Android feature.
 
+## Troubleshooting and optional feedback
+
+Version 0.3.1 adds automatic, limited technical reports for setup, permissions,
+crashes and OS-reported process exits, access windows, meter/reconciliation totals
+and notification publishing. Reports queue when offline and rotate after seven
+days on the service. They do not include app names, screen content, passwords,
+raw app-use events or raw Health data. Crashes generally upload after reopening;
+Android 11+ supplies additional historical exit/ANR reasons when available.
+
+If something fails, copy **Support reference** on the sign-in screen, or choose
+**Apps and account → Copy support reference**. Send that reference and roughly
+when the problem happened to support. Keep login, recovery and pair codes private.
+
+Optional feature ratings may appear after you have used a feature and returned
+to the idle home screen. Automatic prompts are limited to once a week and twice
+per build. **Not now** snoozes; **Stop asking** stops automatic prompts. You can
+also choose **Apps and account → Send feedback**. Feedback is separate from
+protection and operational reporting: skipping it never changes access or rewards.
+These are private feature ratings, not Google Play reviews.
+
 ## Verification status
 
-Version **0.3.0 (1)** is release-signed. Server account, pairing, single-phone,
+Version **0.3.1 (2)** is release-signed. Server account, pairing, single-phone,
 deduplication and reward tests; Android meter tests; signed-allowance rejection;
 Room transaction/reopen tests; release compilation and lint are recorded with the
 release. **Physical Android acceptance has not been run: no Android device was
