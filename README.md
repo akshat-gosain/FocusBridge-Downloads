@@ -3,7 +3,7 @@
 Public installers and release notes only. FocusBridge application source, server credentials,
 pairing links, device logs and developer archives do not belong in this repository.
 
-**Mac and Windows downloads are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
+**Mac, Windows and Android downloads are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
 The public TestFlight link is open. App Store review and public App Store release
 are separate; a TestFlight invitation is not an App Store listing.
 Update to **0.3.0 (32)** for guided Mac/Windows downloads and pairing. The earlier
@@ -60,6 +60,16 @@ A Mac and a Windows PC can both contribute to one account. Productive seconds fr
 different computers are combined, with simultaneous intervals counted once, not
 twice. Each computer needs its own one-use connection link. Adding Windows does
 not disconnect a Mac or reset the phone balance. See [Windows setup](WINDOWS_SETUP.md).
+
+## Android Installation
+
+[Download FocusBridge for Android](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/android-v0.3.0)
+and follow the [Android setup guide](ANDROID_SETUP.md). The release-signed APK
+requires Android 10 or later and includes guided account creation, permissions,
+app selection and Mac/Windows pairing. One Android or iPhone spends an account's
+balance; Mac and Windows can both contribute. No Android hardware was available
+for physical acceptance; the release records that limit rather than claiming it
+was tested on a phone. This APK is not a Google Play release.
 
 ## Third-Party Software
 

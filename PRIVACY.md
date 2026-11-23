@@ -1,6 +1,6 @@
 # FocusBridge Privacy Notice
 
-Updated November 23, 2026. Applies to the FocusBridge iPhone app, Mac and Windows
+Updated November 23, 2026. Applies to the FocusBridge iPhone and Android apps, Mac and Windows
 companions, Safari extensions and associated FocusBridge account service.
 
 FocusBridge is operated by Akshat Gosain. For privacy requests or support, contact
@@ -21,10 +21,17 @@ app-specific account identifier, identity token and one-time authorization code.
 The app does not request your Apple account password, name or email through that
 sign-in. Apple's own services handle the Apple account authentication.
 
+Android supports a FocusBridge username/password account. The server stores the
+normalized username, an Argon2id password hash and a hash of a one-time recovery
+code, not the plaintext password or recovery code. Password verification is rate
+limited and memory-intensive work is bounded. Password recovery rotates the code
+and revokes device connections; there is no email recovery. An authenticated owner
+can link this identity to an existing account. Signing in does not merge accounts.
+
 The service stores an encrypted Apple refresh grant so it can revoke your Apple
 authorization when you delete your account. Device/setup/pairing credentials are
 stored as hashes on the server. Device credentials use native Keychain on Apple
-devices and current-user Windows DPAPI on Windows; temporary setup and one-use
+devices, Android Keystore-backed AES-GCM on Android and current-user Windows DPAPI on Windows; temporary setup and one-use
 pairing links must be kept private.
 
 Required service records include account and installation identifiers, your chosen
@@ -37,6 +44,15 @@ reconcile usage. Account syncing is separate from optional diagnostics.
 Apple's opaque iPhone app/site selection tokens stay on your device. FocusBridge
 syncs a selection identifier and measured usage totals, not those selection tokens.
 Your iPhone needs your explicit Screen Time authorization to apply protection.
+
+On Android, selected package names, native Usage Access events and package-only
+Accessibility changes are processed on the phone to shield selected apps and
+measure active use. These package names/events are not uploaded as diagnostics.
+Android does not retrieve accessibility screen content, text, messages, passwords
+or screenshots. Account-day usage totals, signed allowance bindings and bounded
+technical status/error reports sync to the service. There is no Android Health
+Connect collection in this release. Android app backups are disabled and exclude
+credentials and accounting state.
 
 ## ActivityWatch On Your Computer
 
