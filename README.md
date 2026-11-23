@@ -6,8 +6,9 @@ pairing links, device logs and developer archives do not belong in this reposito
 **Mac and Windows downloads are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
 The public TestFlight link is open. App Store review and public App Store release
 are separate; a TestFlight invitation is not an App Store listing.
-Update to **0.3.0 (30)** for the initial app-selection setup fix. In the selector,
-choose your apps/categories/websites and tap **Done** to save.
+Update to **0.3.0 (32)** for guided Mac/Windows downloads and pairing. The earlier
+app-selection setup fix is included: choose your apps/categories/websites and tap
+**Done** to save.
 Do not use historical development-signed disk images as a public release.
 
 The App Store listing is **FocusBridge: Earn Your Time**. The first release is free,
@@ -25,13 +26,13 @@ Download the signed, Apple-notarized package from the [Mac companion release](ht
 - `macOS-x86_64.pkg`: Intel Macs.
 
 Install the iPhone app from TestFlight, then choose
-**Continue with Apple**. Follow **Connect your Mac** in the iPhone setup to install
+**Continue with Apple**. Follow **Connect your computer → Mac** in the iPhone setup to install
 the companion and connect both devices to that account. Mac installation alone
 does not create an account. App Store review and release are separate.
 
 Open the package and complete the standard macOS installer. It installs FocusBridge and the
 official ActivityWatch collector into Applications. No Terminal commands or Xcode are needed.
-Open FocusBridge, then use Connect your Mac on the iPhone to send its private one-use link.
+Open FocusBridge, then use Connect your computer → Mac on the iPhone to send its private one-use link.
 Confirm the connection on the Mac. Grant ActivityWatch Accessibility permission when requested,
 choose productive apps, and optionally enable launch at login. Permissions remain your choice.
 
@@ -49,9 +50,9 @@ it. Its release page includes the signing status, SHA-256 and native check resul
 Do not disable Windows security protections. A real-PC foreground/idle/browser
 acceptance check is still outstanding.
 
-iPhone build **32** adds installer links and Windows pairing. It is being released
-through TestFlight; Apple's processing/review determines when it appears. Historical
-build 30 supports Mac setup only. In the updated iPhone app choose **Settings →
+iPhone build **32** is available through the public TestFlight link and adds
+installer links and Windows pairing. Historical build 30 supports Mac setup only.
+In the updated iPhone app choose **Settings →
 Connect your computer → Windows**, send the installer link to your PC, then create
 a private connection link/code. Open FocusBridge on Windows and confirm Connect.
 
