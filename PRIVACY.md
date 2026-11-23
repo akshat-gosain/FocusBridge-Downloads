@@ -1,7 +1,7 @@
 # FocusBridge Privacy Notice
 
-Updated November 22, 2026. Applies to the FocusBridge iPhone app, Mac companion,
-Safari extensions and associated FocusBridge account service.
+Updated November 23, 2026. Applies to the FocusBridge iPhone app, Mac and Windows
+companions, Safari extensions and associated FocusBridge account service.
 
 FocusBridge is operated by Akshat Gosain. For privacy requests or support, contact
 [akshat.gosain1990@gmail.com](mailto:akshat.gosain1990@gmail.com). Do not include
@@ -10,7 +10,7 @@ passwords, pairing codes, Apple tokens or raw Health records in a support messag
 ## What FocusBridge Does
 
 FocusBridge is a personal focus and device-management tool. It combines a daily
-distraction allowance with rewards from productive Mac activity and, optionally,
+distraction allowance with rewards from productive computer activity and, optionally,
 Apple Health Move-goal progress. It measures use of selected distractions to
 reconcile your balance. It is not a service for supervising other adults or employees.
 
@@ -23,8 +23,9 @@ sign-in. Apple's own services handle the Apple account authentication.
 
 The service stores an encrypted Apple refresh grant so it can revoke your Apple
 authorization when you delete your account. Device/setup/pairing credentials are
-stored as hashes on the server. Device credentials are stored in native Keychain
-on your devices; temporary setup and one-use pairing links must be kept private.
+stored as hashes on the server. Device credentials use native Keychain on Apple
+devices and current-user Windows DPAPI on Windows; temporary setup and one-use
+pairing links must be kept private.
 
 Required service records include account and installation identifiers, your chosen
 device name, platform/version, account timezone, pairing/revocation status, productive
@@ -37,12 +38,12 @@ Apple's opaque iPhone app/site selection tokens stay on your device. FocusBridge
 syncs a selection identifier and measured usage totals, not those selection tokens.
 Your iPhone needs your explicit Screen Time authorization to apply protection.
 
-## ActivityWatch On Mac
+## ActivityWatch On Your Computer
 
-The Mac installer includes the official, unmodified ActivityWatch application.
+The Mac and Windows installers include the official, unmodified ActivityWatch application.
 ActivityWatch is a separate open-source app with its own local database and controls.
 Depending on the watchers you enable, it can record active-window titles, application
-names, idle/active periods and browser activity locally on your Mac.
+names, idle/active periods and browser activity locally on your computer.
 
 FocusBridge evaluates eligible work locally against your productive rules and idle
 periods. Work uploads contain rule identifiers and interval timestamps/durations,
@@ -98,6 +99,15 @@ minute per process, with a bounded local queue; offline reports are retried afte
 device enrollment and connectivity resume. Delivery is not guaranteed if the app
 cannot run or the device has not enrolled. Detailed support traces remain separately
 optional; their existing opt-out is not changed by the operational-report channel.
+
+The Windows connection screen explains its limited operational reporting before
+you choose Connect. Windows reports include app/OS versions, random session/event
+identifiers, a fixed connection/sync state and technical error codes. They exclude
+raw activity, app names, URLs, free-text error messages, balances and Health values.
+Repeated identical reports are limited to once per 15 minutes per state/error;
+the local retry queue is bounded to 100 events. A separate bounded local log records
+operation names and error types/codes. The ActivityWatch database is independent
+of these reports and remains local.
 
 ## Optional Detailed Diagnostics
 
@@ -155,7 +165,7 @@ share it with data brokers, or configure cross-company advertising tracking.
 Access to Health, Screen Time, Accessibility and Safari extensions remains under
 your platform's permission controls.
 
-The service uses HTTPS, native Keychain for device credentials, hashed server-side
+The service uses HTTPS, native Keychain or Windows DPAPI for device credentials, hashed server-side
 credentials, encrypted Apple refresh grants and encrypted database backups. These
 safeguards do not mean every database field is encrypted individually, nor can any
 software promise perfect security or uninterrupted iOS background delivery.
