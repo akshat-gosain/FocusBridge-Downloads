@@ -3,7 +3,7 @@
 Public installers and release notes only. FocusBridge application source, server credentials,
 pairing links, device logs and developer archives do not belong in this repository.
 
-**Signed Mac installers are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
+**Mac and Windows downloads are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
 The public TestFlight link is open. App Store review and public App Store release
 are separate; a TestFlight invitation is not an App Store listing.
 Update to **0.3.0 (30)** for the initial app-selection setup fix. In the selector,
@@ -36,7 +36,29 @@ Confirm the connection on the Mac. Grant ActivityWatch Accessibility permission 
 choose productive apps, and optionally enable launch at login. Permissions remain your choice.
 
 macOS 14 or later is required. The iPhone app requires iOS 17.4 or later.
-Windows is not supported in this release.
+
+## Windows Installation
+
+Download [FocusBridge for Windows x64](https://github.com/akshat-gosain/FocusBridge-Downloads/releases/tag/windows-v0.3.0).
+The setup EXE includes the .NET runtime and official ActivityWatch collector; no
+SDK, Terminal commands or separate collector installation is needed. Windows 10
+version 2004 or later, or Windows 11, is required.
+
+The Windows installer is currently **unsigned**. Windows may warn about or block
+it. Its release page includes the signing status, SHA-256 and native check results.
+Do not disable Windows security protections. A real-PC foreground/idle/browser
+acceptance check is still outstanding.
+
+iPhone build **32** adds installer links and Windows pairing. It is being released
+through TestFlight; Apple's processing/review determines when it appears. Historical
+build 30 supports Mac setup only. In the updated iPhone app choose **Settings →
+Connect your computer → Windows**, send the installer link to your PC, then create
+a private connection link/code. Open FocusBridge on Windows and confirm Connect.
+
+A Mac and a Windows PC can both contribute to one account. Productive seconds from
+different computers are combined, with simultaneous intervals counted once, not
+twice. Each computer needs its own one-use connection link. Adding Windows does
+not disconnect a Mac or reset the phone balance. See [Windows setup](WINDOWS_SETUP.md).
 
 ## Third-Party Software
 
