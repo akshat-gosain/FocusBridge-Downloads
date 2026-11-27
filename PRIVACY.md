@@ -1,6 +1,6 @@
 # FocusBridge Privacy Notice
 
-Updated November 23, 2026. Applies to the FocusBridge iPhone and Android apps, Mac and Windows
+Updated November 27, 2026. Applies to the FocusBridge iPhone and Android apps, Mac and Windows
 companions, Safari extensions and associated FocusBridge account service.
 
 FocusBridge is operated by Akshat Gosain. For privacy requests or support, contact
@@ -15,6 +15,20 @@ Apple Health Move-goal progress. It measures use of selected distractions to
 reconcile your balance. It is not a service for supervising other adults or employees.
 
 ## Account And Required Service Data
+
+Starting with iPhone build 33, Screen Time setup is available without registering
+or signing in. Your permission and app/site selections are managed locally.
+To provide the daily balance and Live Activity updates without sign-in, the app
+uses a random device-session identifier and a secure installation credential
+stored in Keychain. The service stores the credential's hash, timezone, app version
+and the balance/usage records described below, under an internal device profile.
+It does not request a name, email, Apple identity or password for this mode.
+Device-only service records are pseudonymous, not anonymous aggregate data.
+An internet connection is needed to initialize or renew a signed daily balance;
+already issued valid balances continue to support local enforcement offline.
+Optional Apple sign-in can link the same profile for recovery and computer
+pairing without resetting its balance. Accounts with different identities are
+not automatically merged.
 
 When you use native Sign in with Apple, FocusBridge receives and verifies Apple's
 app-specific account identifier, identity token and one-time authorization code.
@@ -195,6 +209,11 @@ If revocation fails, the app reports an error rather than claiming deletion succ
 Minimal random account identifiers and a deletion record can remain to identify the
 deleted account without retaining its Apple sign-in identity or account history.
 Contact support if you cannot complete deletion in the app.
+
+For a device-only profile that has not been linked to Apple, use Settings >
+Delete device data. This removes its service records and revokes the installation
+credential without requiring Apple sign-in. Deletion needs an internet connection;
+the app reports an error if service-side deletion cannot be confirmed.
 
 Local records on your own devices, the independent ActivityWatch database and Apple
 Health records are subject to their separate controls. Uninstalling an app alone
