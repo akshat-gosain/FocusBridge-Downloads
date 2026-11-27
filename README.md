@@ -6,7 +6,10 @@ pairing links, device logs and developer archives do not belong in this reposito
 **Mac, Windows and Android downloads are available. [Join FocusBridge on TestFlight](https://testflight.apple.com/join/JNZdkMqz).**
 The public TestFlight link is open. App Store review and public App Store release
 are separate; a TestFlight invitation is not an App Store listing.
-Update to **0.3.0 (32)** for guided Mac/Windows downloads and pairing. The earlier
+Update to **0.3.0 (33)** for optional sign-in, Screen Time setup without registration,
+and guided Mac/Windows downloads and pairing. Choose **Continue without sign-in**
+to use the daily phone balance; connect an Apple account in Settings when you
+want recovery or computer pairing. The earlier
 app-selection setup fix is included: choose your apps/categories/websites and tap
 **Done** to save.
 Do not use historical development-signed disk images as a public release.
@@ -50,7 +53,7 @@ it. Its release page includes the signing status, SHA-256 and native check resul
 Do not disable Windows security protections. A real-PC foreground/idle/browser
 acceptance check is still outstanding.
 
-iPhone build **32** is available through the public TestFlight link and adds
+iPhone build **33** is available through the public TestFlight link and includes
 installer links and Windows pairing. Historical build 30 supports Mac setup only.
 In the updated iPhone app choose **Settings →
 Connect your computer → Windows**, send the installer link to your PC, then create
